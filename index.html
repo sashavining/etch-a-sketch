@@ -5,21 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    
     <title>Etch-a-sketch</title>
 </head>
 <body>
-    <button class="reset">Reset</button>
-    <button class="blackPen">Draw Black</button>
-    <button class="rainbowPen">Draw Rainbow</button>
-    <button class="erase">Erase</button>
-    <button class="gridToggleButton">Toggle Grid Lines</button>
-    <label for="colorPickerValue">Choose a pen color:</label>
-    <input type="color" id="colorPickerValue" name="colorPickerValue" value="#ff0000">
-    <div class="container"></div>
-    
-    
-    <input id="slide" type="range" min="0" max="100"/><p id="val"></p>
-
+    <h1>Etch-a-sketch</h1>
+    <div class="content">
+        <div class="buttonContainer">
+            <button class="blackPen">Black Pen</button>
+            <button class="rainbowPen">Rainbow Pen</button>
+            <label for="colorPickerValue" class="colorPicker">Pick color:
+            <input type="color" id="colorPickerValue" name="colorPickerValue" value="#ff0000"></label>
+            <button class="erase">Erase</button>
+            <button class="gridToggleButton">Toggle Grid</button>
+            <button class="reset">Reset</button>
+        </div>
+        <div class="container"></div>
+    </div>
+    <div class="sliderContainer">
+        <label for="slide" class="sliderLabel">Adjust cell size:</label>
+        <input id="slide" type="range" min="0" max="100"/><p id="val" hidden></p>
+    </div>
     
 </body>
 </html>
