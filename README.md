@@ -23,4 +23,4 @@ That re-making a feature for a project from the ground up does not mean that I a
 I have loved how each project I completed has forced me to go back and change something that I initially tried one way to make all of my planned features work. I feel that this has made me understand the nuances of choices I make (e.g. to add a class or inline CSS) much better, and sets me up to make better choices at the start of my next project.
 
 
-(Created 1/12/2022)
+(Created 1/22/2022)
